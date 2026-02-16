@@ -69,7 +69,7 @@ export function HeroSection() {
                 href="#features"
                 className="inline-flex items-center gap-2 px-8 py-4 border border-border text-foreground font-medium rounded-lg text-lg hover:bg-secondary transition-colors"
               >
-                How It Works
+                Features
               </a>
             </div>
 
