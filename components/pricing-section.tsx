@@ -1,6 +1,7 @@
 "use client"
 
 import { ArrowRight, Check, Shield } from "lucide-react"
+import { WaitlistForm } from "@/components/waitlist-form"
 
 const features = [
   "Deep Calendar Integration",
@@ -77,15 +78,7 @@ export function PricingSection() {
               ))}
             </ul>
 
-            <button className="group relative flex items-center justify-center gap-2 w-full py-4 bg-primary text-primary-foreground font-semibold rounded-xl text-lg transition-all hover:scale-[1.02] active:scale-[0.98]">
-              <span className="absolute inset-0 rounded-xl bg-primary/50 blur-xl opacity-0 group-hover:opacity-60 transition-opacity" aria-hidden="true" />
-              <span className="relative">Join Early Access</span>
-              <ArrowRight className="relative w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </button>
-
-            <p className="text-center text-xs text-muted-foreground mt-4">
-              Only 200 spots available. 47 already claimed.
-            </p>
+            <WaitlistForm />
           </div>
         </div>
       </div>
