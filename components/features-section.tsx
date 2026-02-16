@@ -1,25 +1,36 @@
 "use client"
-
-import { Bell, BarChart3, Zap } from "lucide-react"
+import { Car, ShieldAlert, Stethoscope, Briefcase, Mail, Calendar } from "lucide-react"
 
 const features = [
   {
-    icon: Bell,
-    title: "Smart Ritual Reminders",
-    description:
-      "Input your important dates once. Your assistant tracks deadlines, sends proactive reminders, and prepares the next step — email templates, booking links, call scripts.",
+    icon: Car,
+    title: "Car Value Monitoring",
+    description: "Know exactly when your car is worth the most. We track market trends so you don't have to.",
   },
   {
-    icon: BarChart3,
-    title: "Asset Monitoring",
-    description:
-      "Track your car's market value, subscription renewals, and more. Get notified when conditions change — like when your car's value peaks or a subscription is about to auto-renew.",
+    icon: ShieldAlert,
+    title: "Insurance Reminders",
+    description: "Never miss a renewal. We remind you before it expires and help you find better rates.",
   },
   {
-    icon: Zap,
-    title: "Action-Ready Suggestions",
-    description:
-      "It doesn't just remind — it prepares. Get draft emails, booking links, and smart prompts so you can take action in seconds, not hours.",
+    icon: Stethoscope,
+    title: "Doctor Reminders",
+    description: "Keep your health in check. We remind you when it's time for checkups and appointments.",
+  },
+  {
+    icon: Briefcase,
+    title: "Auto Job Search",
+    description: "Looking for a better position? We constantly scan for opportunities that match your profile.",
+  },
+  {
+    icon: Mail,
+    title: "Auto Email Reply",
+    description: "Save hours on inbox management. We draft smart replies for you to approve and send.",
+  },
+  {
+    icon: Calendar,
+    title: "Smart Calendar",
+    description: "We organize your schedule, fix conflicts, and ensure you never double-book yourself.",
   },
 ]
 
@@ -38,34 +49,25 @@ export function FeaturesSection() {
 
       <div className="relative max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-primary text-sm font-semibold tracking-widest uppercase mb-4">Core Features</p>
+          <p className="text-primary text-sm font-semibold tracking-widest uppercase mb-4">What We Do</p>
           <h2 className="font-heading text-3xl md:text-5xl font-bold tracking-tight text-balance">
-            Meet Your Personal Life Assistant.
+            Everything handled on autopilot.
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group relative rounded-2xl border border-border bg-card/60 backdrop-blur-sm p-8 hover:border-primary/40 transition-all duration-500"
+              className="group relative rounded-2xl border border-border bg-card/60 backdrop-blur-sm p-8 hover:border-primary/40 transition-all duration-300"
             >
-              {/* Glow effect */}
-              <div
-                className="absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                aria-hidden="true"
-                style={{
-                  background:
-                    "linear-gradient(135deg, rgba(255,0,60,0.15) 0%, transparent 50%, rgba(255,23,68,0.1) 100%)",
-                }}
-              />
-              <div className="relative">
-                <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 mb-6">
-                  <feature.icon className="w-7 h-7 text-primary" />
+              <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary">
+                  <feature.icon className="w-6 h-6" />
                 </div>
-                <h3 className="font-heading text-xl font-bold mb-3 text-foreground">{feature.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+                <h3 className="font-heading text-xl font-bold text-foreground">{feature.title}</h3>
               </div>
+              <p className="text-muted-foreground leading-relaxed text-sm md:text-base">{feature.description}</p>
             </div>
           ))}
         </div>
