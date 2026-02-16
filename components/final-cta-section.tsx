@@ -23,7 +23,7 @@ export function FinalCtaSection() {
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
           <span>Powered by</span>
           <a
-            href="https://openclaw.com"
+            href="https://openclaw.ai"
             target="_blank"
             rel="noreferrer"
             className="font-medium text-foreground hover:text-primary transition-colors flex items-center gap-1"
