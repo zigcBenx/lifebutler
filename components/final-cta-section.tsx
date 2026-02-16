@@ -40,10 +40,10 @@ export function FinalCtaSection() {
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary" />
-            <span className="font-heading font-bold text-foreground">LifePilot</span>
+            <span className="font-heading font-bold text-foreground">LifeButler</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            {"© 2026 LifePilot. All rights reserved."}
+            {"© 2026 LifeButler. All rights reserved."}
           </p>
         </div>
       </div>

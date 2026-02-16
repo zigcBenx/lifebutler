@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk' })
 
 export const metadata: Metadata = {
-  title: 'LifePilot - Your Personal Life Assistant',
+  title: 'LifeButler - Your Personal Life Assistant',
   description: 'Automate your reminders. Monitor your assets. Stay ahead of life — without thinking about it.',
 }
 

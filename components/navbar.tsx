@@ -23,17 +23,16 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-background/80 backdrop-blur-lg border-b border-border"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-primary" />
-          <span className="font-heading font-bold text-foreground text-lg">LifePilot</span>
+          <span className="font-heading font-bold text-foreground text-lg">LifeButler</span>
         </a>
 
         {/* Desktop nav */}
